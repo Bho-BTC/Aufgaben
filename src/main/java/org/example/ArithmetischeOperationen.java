@@ -11,11 +11,7 @@ public class ArithmetischeOperationen {
         System.out.println(zahl);
 
 
-
-
-
-
-
-        }
+    }
     }
 
+//Ausgabe ist 1 1 1 2, bei ++ Zahl wird erst zusammen gerechnet und dann ausgegeben und bei zahl++ wird erst ausgegeben und dann zusammengerechnet
