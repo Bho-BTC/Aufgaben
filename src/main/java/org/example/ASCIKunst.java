@@ -39,6 +39,30 @@ public class ASCIKunst {
             }
         }
 
+        System.out.println();
+        System.out.println("Gib die größe einer Sanduhrhälfte an.");
+        int inputSandUhr = scanner.nextInt();
+        counter =inputSandUhr+1;
+
+        while (counter > 0) {
+            counter--;
+            counter2=0;
+            System.out.println();
+            while (counter2 < counter) {
+                System.out.print(Star);
+                counter2++;
+            }
+        }
+        while (counter < inputSandUhr) {
+            counter++;
+            counter2=0;
+            System.out.println();
+            while (counter2 < counter) {
+                System.out.print(Star);
+                counter2++;
+            }
+        }
+
 
 
     }
