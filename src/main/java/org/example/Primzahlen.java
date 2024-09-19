@@ -20,7 +20,6 @@ public class Primzahlen {
                     div= div +1;
                     if(input%div==0 && div != 1 && div !=input )
                     {
-                        check = false;
                         prime = false;
                     }else{
                         check= false;
