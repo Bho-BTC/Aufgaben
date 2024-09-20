@@ -15,23 +15,23 @@ public class Primzahlen {
         boolean check = true;
         boolean prime= true;
         double div = 0;
-            while(check){
-                while(div<=input){
-                    div= div +1;
-                    if(input%div==0 && div != 1 && div !=input )
-                    {
-                        prime = false;
-                    }else{
-                        check= false;
-                    }
+        while(check){
+            while(div<=input){
+                div= div +1;
+                if(input%div==0 && div != 1 && div !=input )
+                {
+                    prime = false;
+                }else{
+                    check= false;
                 }
             }
-            String ergebnis = "";
-            if(prime) {
-                ergebnis= "eine";
-            } else {
-                ergebnis = "keine";
-            }
-            System.out.println("Die Zahl ist "+ergebnis+ " Primzahl" );
+        }
+        String ergebnis = "";
+        if(prime) {
+            ergebnis= "eine";
+        } else {
+            ergebnis = "keine";
+        }
+        System.out.println("Die Zahl ist "+ergebnis+ " Primzahl" );
     }
 }
