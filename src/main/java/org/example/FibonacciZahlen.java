@@ -1,5 +1,7 @@
 package org.example;
+
 import java.util.Scanner;
+
 public class FibonacciZahlen {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -10,15 +12,19 @@ public class FibonacciZahlen {
         int maxRounds = scanner.nextInt();
 
         int ergebnis = 0;
-        while(ergebnis<=maxRounds){
-            ergebnis = firstNbr+secondNbr;
+        while (ergebnis <= maxRounds) {
+            ergebnis = firstNbr + secondNbr;
             firstNbr = secondNbr;
-            secondNbr=ergebnis;
+            secondNbr = ergebnis;
 
-            if(ergebnis<maxRounds) {
+            while (ergebnis < maxRounds) {
                 System.out.println(ergebnis);
+                ergebnis = maxRounds+1;
             }
 
         }
+
+
     }
 }
+

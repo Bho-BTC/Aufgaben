@@ -8,7 +8,7 @@ public class Divisionscheck {
         Scanner scanner = new Scanner(System.in);
         int divider;
         int divBisHier;
-        int counter = 0;
+        int counter = 1;
         do {
             System.out.println("Gib eine Zahl an, die als Divisor benutzt werden soll");
             divider = scanner.nextInt();
@@ -22,8 +22,9 @@ public class Divisionscheck {
 
 
         while(counter<=divBisHier){
-        if(counter%divider==0){
+        while(counter%divider==0){
             System.out.println("Die Zahl "+ counter+ " ist durch "+ divider+" teilbar.");
+            counter++;
         }
         counter++;
 
